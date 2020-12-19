@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
   <configuration file="D:\PHD\DRDC2020\Oceanus\oceanus\oceanus.prj" location="D:\PHD\DRDC2020\Oceanus\oceanus" name="oceanus" target="target.mlapps" target-name="Package App">
     <param.appname>oceanus</param.appname>
@@ -68,4 +69,76 @@
       <matlab>true</matlab>
     </platform>
   </configuration>
+=======
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration file="D:\PHD\DRDC2020\Oceanus\oceanus\oceanus.prj" location="D:\PHD\DRDC2020\Oceanus\oceanus" name="oceanus" target="target.mlapps" target-name="Package App">
+    <param.appname>oceanus</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\Ahmad\AppData\Local\Temp\tpde5fea2a_e0f6_4ef4_ae21_c9ac61cb4ed0.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>021ac172-d79b-47d8-a1db-fb71524f2b41</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\oceanus.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="D:\PHD\DRDC2020\Oceanus" name="oceanus" optional="false">D:\PHD\DRDC2020\Oceanus\oceanus</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2019b</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+>>>>>>> add7a7d1d09c584da5f689011fa5b8ff5476d677
 </deployment-project>
