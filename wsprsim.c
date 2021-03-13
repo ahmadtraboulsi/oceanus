@@ -44,7 +44,7 @@ int add_signal_vector(float f0, float t0, float amp, unsigned char* symbols,
                       double* isig, double* qsig)
 {
     // Assumptions:
-    //    - 375/260 baud (1.46 baud)
+    //    - 375/256 baud (1.46 baud)
     //    - 375 samples pe second
     //    - 256 samples per symbols
     //    - base frequency is 2 Hertz
@@ -144,6 +144,7 @@ unsigned long writec2file(char *c2filename, int trmin, double freq
 
 
 //********************************************************************
+/*
 int main(int argc, char *argv[])
 {
     extern char *optarg;
@@ -160,7 +161,7 @@ int main(int argc, char *argv[])
 
     strcpy(c2filename,"000000_0001.c2");
 
-    srand(getpid());
+    //srand(getpid());
 
     while ( (c = getopt(argc, argv, "cdo:s:")) !=-1 ) {
         switch (c) {
@@ -188,6 +189,14 @@ int main(int argc, char *argv[])
     }
 
     unsigned char channel_symbols[162];
+
+	printf("\n Message: ");
+	for (int j = 0; j < 23; j++)
+	{
+		printf("%c", message[j]);
+	}
+	printf("\n ");
+
     get_wspr_channel_symbols(message, hashtab, channel_symbols);
 
     if( printchannel ) {
@@ -228,4 +237,243 @@ int main(int argc, char *argv[])
         writec2file(c2filename, wsprtype, carrierfreq, isig, qsig);
     }
     return 1;
+}
+*/
+
+
+
+
+
+
+void wsprfunctest(char *message, double snr)
+{
+	snr = snr == 0 ? 50 : snr;
+	//double *insig, double *qdsig;
+	//char* message = "test";
+	//extern char *optarg;
+	//extern int optind;
+	int i, c;// , writec2 = 0;
+	//float snr = 50.0;
+	//char *message, 
+	char *c2filename, *hashtab;
+	c2filename = malloc(sizeof(char) * 15);
+	hashtab = malloc(sizeof(char) * 32768 * 13);
+	memset(hashtab, 0, sizeof(char) * 32768 * 13);
+
+	// message length is 22 characters
+	//message = malloc(sizeof(char) * 23);
+
+	strcpy(c2filename, "000000_0001.c2");
+
+	//srand(getpid());
+
+
+	/*while ((c = getopt(argc, argv, "cdo:s:")) != -1) {
+	switch (c) {
+	case 'c':
+	printchannel = 1;
+	break;
+	case 'd':
+	printdata = 1;
+	break;
+	case 'o':
+	c2filename = optarg;
+	writec2 = 1;
+	break;
+	case 's':
+	snr = (float)atoi(optarg);
+	break;
+	}
+	}*/
+
+	/*if (optind + 1 > argc) {
+	//usage();
+	return 0;
+	}
+	else {
+	message = argv[optind];
+	}
+	*/
+
+	/*printf("Message: ");
+	for (int j = 0; j < 23; j++)
+	{
+		printf("%c", message[j]);
+	} 
+	printf("\n");
+	*/
+	unsigned char channel_symbols[162];
+	get_wspr_channel_symbols(message, hashtab, channel_symbols);
+	/*for (int i = 0; i < 162; i++)
+	{
+		printf("%d",channel_symbols[i]);
+	}*/
+	/*if (printchannel) {
+	printf("Channel symbols:\n");
+	for (i = 0; i<162; i++) {
+	printf("%d ", channel_symbols[i]);
+	}
+	printf("\n");
+	} */
+
+	// add noise, then signal
+	double isig[45000], qsig[45000];
+	memset(isig, 0, sizeof(double) * 45000);
+	memset(qsig, 0, sizeof(double) * 45000);
+
+	if (snr < 40) {
+		// snr in 375Hz is 8.2 dB higher than in 2500 Hz.
+		snr = snr + 8.2;
+		snr = pow(10, snr / 20.0)*pow(2, 0.5);
+
+		for (i = 0; i<45000; i++) {
+			isig[i] = isig[i] + gaussrand();
+			qsig[i] = qsig[i] + gaussrand();
+		}
+	}
+	else {
+		snr = 1.0;
+	}
+
+	float f0, t0;
+	f0 = 0.0;
+	t0 = 1.0;
+	add_signal_vector(f0, t0, snr, channel_symbols, isig, qsig);
+	//insig = isig;
+	//qdsig = qsig;
+	//qdsig = qsig;
+	//if (writec2) {
+	//write a .c2 file
+	double carrierfreq = 10.1387;
+	int wsprtype = 2;
+	printf("Writing %s\n", c2filename);
+	writec2file(c2filename, wsprtype, carrierfreq, isig, qsig);
+	//}
+	//float result[2][45000] = { {} };
+	/*Counter variables for the loop*/
+	int  j;
+
+	/*for (j = 0; j<45000; j++) {
+		//if (j > 0 && j < 2048)
+		{
+			printf("%.2f ", isig[j]);
+		}
+		//insig[j] = isig[j];
+		//qdsig[j] = qsig[j];
+	} */
+}
+
+
+void wsprfunc(char *message ,double snr, double *insig, double *qdsig)
+{
+	snr = snr == 0 ? 50 : snr;
+	//char* message = "test";
+	//extern char *optarg;
+	//extern int optind;
+	int i, c;// , writec2 = 0;
+	//float snr = 50.0;
+	//char *message, 
+	char *c2filename, *hashtab;
+	c2filename = malloc(sizeof(char) * 15);
+	hashtab = malloc(sizeof(char) * 32768 * 13);
+	memset(hashtab, 0, sizeof(char) * 32768 * 13);
+
+	// message length is 22 characters
+	//message = malloc(sizeof(char) * 23);
+
+	strcpy(c2filename, "000000_0001.c2");
+
+	//srand(getpid());
+	
+
+	/*while ((c = getopt(argc, argv, "cdo:s:")) != -1) {
+		switch (c) {
+		case 'c':
+			printchannel = 1;
+			break;
+		case 'd':
+			printdata = 1;
+			break;
+		case 'o':
+			c2filename = optarg;
+			writec2 = 1;
+			break;
+		case 's':
+			snr = (float)atoi(optarg);
+			break;
+		}
+	}*/
+
+	/*if (optind + 1 > argc) {
+		//usage();
+		return 0;
+	}
+	else {
+		message = argv[optind];
+	}
+	*/	
+	unsigned char channel_symbols[162];
+	get_wspr_channel_symbols(message, hashtab, channel_symbols);
+
+	/*if (printchannel) {
+		printf("Channel symbols:\n");
+		for (i = 0; i<162; i++) {
+			printf("%d ", channel_symbols[i]);
+		}
+		printf("\n");
+	} */
+
+	// add noise, then signal
+	double isig[45000], qsig[45000];
+	memset(isig, 0, sizeof(double) * 45000);
+	memset(qsig, 0, sizeof(double) * 45000);
+
+	if (snr < 40) {
+		// snr in 375Hz is 8.2 dB higher than in 2500 Hz.
+		snr = snr + 8.2;
+		snr = pow(10, snr / 20.0)*pow(2, 0.5);
+
+		for (i = 0; i<45000; i++) {
+			isig[i] = isig[i] + gaussrand();
+			qsig[i] = qsig[i] + gaussrand();
+		}
+	}
+	else {
+		snr = 1.0;
+	}
+
+	float f0, t0;
+	f0 = 0.0;
+	t0 = 1.0;
+	add_signal_vector(f0, t0, snr, channel_symbols, isig, qsig);	
+	//insig = isig;
+	//qdsig = qsig;
+	//qdsig = qsig;
+	/*if (writec2) {
+		// write a .c2 file
+		double carrierfreq = 10.1387;
+		int wsprtype = 2;
+		printf("Writing %s\n", c2filename);
+		writec2file(c2filename, wsprtype, carrierfreq, isig, qsig);
+	}*/
+	//float result[2][45000] = { {} };
+	/*Counter variables for the loop*/
+	int  j;
+	
+		for (j = 0; j<45000; j++) {	
+			if (j > 374 && j < 476)
+			{
+				printf("%.2f ", isig[j]);
+			}
+			insig[j] = isig[j];
+			qdsig[j] = qsig[j];
+		}
+}
+
+
+
+int main(int argc, char *argv[])
+{
+	wsprfunctest("VE3EMB FN25 30", 50);
+		return 1;
 }

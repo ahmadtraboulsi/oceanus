@@ -7,7 +7,7 @@ clear;
 %%% PARAMETERS
 %
 % 1. Input file name (".c2" file format, complex envelope @ 375 samples/sec)
-iFile = '150613_1920';
+iFile = 'test';
 fprintf('Input file name: %s.c2\n', iFile)
 % 2. Carrier frequency
 f = 209; % Hz
@@ -19,7 +19,7 @@ fprintf('Time offset: %d sec.\n', toffset)
 oSps = 4500; % samples/sec (a multiple of 375, e.g. 6K, 12K, 24K, 48K, 96K)
 fprintf('Output file sampling frequency: %d sps\n', oSps);
 % 5. Output file name (broadband signal in ".wav" format)
-oFile = int2str(f)+"_"+int2str(oSps)+".wav"; % use frequency number and sampling frequency
+oFile = int2str(f)+"_"+int2str(oSps)+"2.wav"; % use frequency number and sampling frequency
 fprintf('Output file name: %s\n', oFile);
 % 6. Bits per sample
 BitsPerSample = 16;

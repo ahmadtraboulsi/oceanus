@@ -1,0 +1,6 @@
+if not(libisloaded('wsprsim'))
+loadlibrary('wsprsim')
+end
+insig = libpointer('doublePtr', zeros(1,45000));
+qdsig = libpointer('doublePtr', zeros(1,45000));
+calllib('wsprsim', 'wsprfunc', 50, insig, qdsig)

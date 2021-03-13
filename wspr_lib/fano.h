@@ -18,8 +18,8 @@ int fano(unsigned int *metric, unsigned int *cycles, unsigned int *maxnp,
 
 int encode(unsigned char *symbols,unsigned char *data,unsigned int nbytes);
 
-extern unsigned char Partab[];
-// unsigned char Partab[];
+//extern unsigned char Partab[];
+unsigned char Partab[];
 
 /* Convolutional encoder macro. Takes the encoder state, generates
  * a rate 1/2 symbol pair and stores it in 'sym'. The symbol generated from

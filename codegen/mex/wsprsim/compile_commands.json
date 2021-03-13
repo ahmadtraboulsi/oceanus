@@ -1,0 +1,92 @@
+[
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   D:/PHD/DRDC2020/Oceanus/oceanus/wsprsim.c -o build/win64/wsprsim.o",
+    "file": "D:/PHD/DRDC2020/Oceanus/oceanus/wsprsim.c",
+    "output": "build/win64/wsprsim.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   D:/PHD/DRDC2020/Oceanus/oceanus/wsprsim_utils.c -o build/win64/wsprsim_utils.o",
+    "file": "D:/PHD/DRDC2020/Oceanus/oceanus/wsprsim_utils.c",
+    "output": "build/win64/wsprsim_utils.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   D:/PHD/DRDC2020/Oceanus/oceanus/fano.c -o build/win64/fano.o",
+    "file": "D:/PHD/DRDC2020/Oceanus/oceanus/fano.c",
+    "output": "build/win64/fano.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   D:/PHD/DRDC2020/Oceanus/oceanus/wsprd_utils.c -o build/win64/wsprd_utils.o",
+    "file": "D:/PHD/DRDC2020/Oceanus/oceanus/wsprd_utils.c",
+    "output": "build/win64/wsprd_utils.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   D:/PHD/DRDC2020/Oceanus/oceanus/nhash.c -o build/win64/nhash.o",
+    "file": "D:/PHD/DRDC2020/Oceanus/oceanus/nhash.c",
+    "output": "build/win64/nhash.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   wsprsim_data.c -o build/win64/wsprsim_data.o",
+    "file": "wsprsim_data.c",
+    "output": "build/win64/wsprsim_data.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   rt_nonfinite.c -o build/win64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/win64/rt_nonfinite.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   wsprsim_initialize.c -o build/win64/wsprsim_initialize.o",
+    "file": "wsprsim_initialize.c",
+    "output": "build/win64/wsprsim_initialize.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   wsprsim_terminate.c -o build/win64/wsprsim_terminate.o",
+    "file": "wsprsim_terminate.c",
+    "output": "build/win64/wsprsim_terminate.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   wsprsim1.c -o build/win64/wsprsim1.o",
+    "file": "wsprsim1.c",
+    "output": "build/win64/wsprsim1.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_wsprsim_api.c -o build/win64/_coder_wsprsim_api.o",
+    "file": "interface/_coder_wsprsim_api.c",
+    "output": "build/win64/_coder_wsprsim_api.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_wsprsim_mex.c -o build/win64/_coder_wsprsim_mex.o",
+    "file": "interface/_coder_wsprsim_mex.c",
+    "output": "build/win64/_coder_wsprsim_mex.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   wsprsim_emxutil.c -o build/win64/wsprsim_emxutil.o",
+    "file": "wsprsim_emxutil.c",
+    "output": "build/win64/wsprsim_emxutil.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_wsprsim_info.c -o build/win64/_coder_wsprsim_info.o",
+    "file": "interface/_coder_wsprsim_info.c",
+    "output": "build/win64/_coder_wsprsim_info.o"
+  },
+  {
+    "directory": "D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2020b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\" -I \"D:\\PHD\\DRDC2020\\Oceanus\\oceanus\\codegen\\mex\\wsprsim\\interface\" -I \"C:\\Program Files\\MATLAB\\R2020b\\extern\\include\" -I \".\" -DMODEL=wsprsim_mex -D__USE_MINGW_ANSI_STDIO=1   \"C:/Program Files/MATLAB/R2020b/extern/version/c_mexapi_version.c\" -o build/win64/c_mexapi_version.o",
+    "file": "C:/Program Files/MATLAB/R2020b/extern/version/c_mexapi_version.c",
+    "output": "build/win64/c_mexapi_version.o"
+  }
+]
