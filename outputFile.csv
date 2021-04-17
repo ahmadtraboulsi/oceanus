@@ -1,0 +1,7 @@
+File Name, result (0 successes | 1 failed), Output, Cycles, Gamma, RMS, SixHzSNR, Tx Time, Signal, Occur, Hp (Hydrophone), Range, Percent Clip, Range (Meters), Rx Time, Bit Error Count, carrier frequency 
+D:\PHD\DRDC2020\Oceanus\oceanus2\209_12000_6.wav, 0, 1  1  0  1  0  1  0  0  0  0  1  0  1  1  0  0  0  1  1  1  0  0  1  1  1  1  1  0  1  0  1  1  0  0  1  1  1  0  1  0  0  1  1  1  0  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0, 81, 324.000000, 50.000000, 1.000000, , , , , , , , , 13, 209.000000 
+-1.000000e+00, -1, -1, -1, -1.000000, -1.000000, -1.000000, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1.000000e+00, -1, -1.000000 
+
+File Name, result (0 successes | 1 failed), Output, Cycles, Gamma, RMS, SixHzSNR, Tx Time, Signal, Occur, Hp (Hydrophone), Range, Percent Clip, Range (Meters), Rx Time, Bit Error Count, carrier frequency 
+D:\PHD\DRDC2020\Oceanus\Signals_SNR\sig1_Mod1_Fs12000_Frames1.wav, 1, 0  1  1  1  1  0  0  1  1  1  0  0  1  1  0  1  0  1  0  1  1  1  0  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0, 151, -56.000000, 49.680150, 25.016942, , , , , , , , , -1, 209.000000 
+
