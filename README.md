@@ -11,8 +11,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 MATLAB Software Version R2020b
 
-![oceanusSS](https://user-images.githubusercontent.com/10162529/111035232-6d567a00-83e7-11eb-84d1-844a466eb1cd.JPG)
-
  
-
- 
+![interface](https://user-images.githubusercontent.com/10162529/219972860-85426fa7-771e-4cba-b7e4-973bbea26b19.PNG)
