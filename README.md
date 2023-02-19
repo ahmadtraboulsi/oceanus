@@ -1,7 +1,7 @@
 # Oceanus
 Underwater communication software
 
-Copyright 2021 Ahmad Traboulsi and Michel Barbeau, Carleton University.
+Copyright 2023 Ahmad Traboulsi and Michel Barbeau, Carleton University.
 
 Version: February, 2023
   
